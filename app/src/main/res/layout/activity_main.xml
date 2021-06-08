@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_result"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:id="@+id/gameresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/computer"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice1"
+                android:id="@+id/dicecomputer"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:contentDescription="@string/todo">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice3"
+                android:id="@+id/diceuser"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:contentDescription="@string/todo2">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="@string/user" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lower"
+            android:textSize="15sp"
+            android:id="@+id/lowerbutton"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp">
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/higher"
+            android:id="@+id/higherbutton"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

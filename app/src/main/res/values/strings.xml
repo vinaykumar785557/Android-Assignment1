@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DiceApp</string>
+    <string name="todo">Computer_Image</string>
+    <string name="todo2">User_Image</string>
+    <string name="lower">Lower</string>
+    <string name="higher">Higher</string>
+    <string name="computer">Computer</string>
+    <string name="user">User</string>
+    <string name="game_result">Game Result</string>
+</resources>
